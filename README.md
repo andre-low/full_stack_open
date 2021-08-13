@@ -6,11 +6,11 @@ I am completing [Full Stack Open 2021](https://fullstackopen.com/en/), a deep di
 
 ## Progress tracker
 
-0. Fundamentals of Web apps
+0. [Fundamentals of Web apps](https://fullstackopen.com/en/part0)
     - General info ✔️
     - Fundamentals of web apps ✔️
     - Exercise ❌
-1. Introduction to React
+1. [Introduction to React](https://fullstackopen.com/en/part1)
     - Introduction to React ✔️
         - Exercise 1.1 ✔️
         - Exercise 1.2 ✔️
