@@ -19,7 +19,7 @@ I am completing [Full Stack Open 2021](https://fullstackopen.com/en/), a deep di
         - Exercise 1.4 ✔️
         - Exercise 1.5 ✔️
     - Component state, event handlers
-        - Completed up to 'Destructuring', do 'Page re-rendering' next ❓
+        - Completed up to 'Destructuring', do 'Page re-rendering' next ⬅️
     - A more complex state, debugging React apps
 2. Communicating with server
     - Rendering a collection, modules
