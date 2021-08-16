@@ -19,14 +19,26 @@ const FeedbackCollector = ({state:[good, neutral, bad], stateHandlers:[setGood, 
   )
 }
 
-const Statistics = ({state:[good, neutral, bad]}) => (
-  <div>
-    <h1>Statistics</h1>
-    Good: {good}<br />
-    Neutral: {neutral}<br />
-    Bad: {bad}<br />
-  </div>
-)
+const Statistics = ({state:[good, neutral, bad]}) => {
+  let total = good + neutral + bad
+  let mean = ((good * 1) + (bad * -1))/total
+  let percentagePositive = good/total * 100
+
+  return (
+    <div>
+      <h1>Statistics</h1>
+      <h2>Feedback</h2>
+      Good: {good + ' ' + '😞'.repeat(good)}<br />
+      Neutral: {neutral + ' ' + '😞'.repeat(neutral)}<br />
+      Bad: {bad + ' ' + '😞'.repeat(bad)}<br />
+
+      <h2>Summary</h2>
+      Total: {total}<br />
+      Average: {mean ? mean : '0'}<br />
+      % Positive: {percentagePositive ? percentagePositive + '%' : '-'}
+    </div>
+  )
+}
 
 const App = () => {
   // save clicks of each button to its own state
