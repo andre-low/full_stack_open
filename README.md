@@ -9,25 +9,22 @@ I am completing [Full Stack Open 2021](https://fullstackopen.com/en/), a deep di
 0. [Fundamentals of Web apps](https://fullstackopen.com/en/part0)
     - General info ✔️
     - Fundamentals of web apps ✔️
-        - Exercises 0.1-0.6 ❌
-1. [Introduction to React](https://fullstackopen.com/en/part1)
+        - Exercises 0.1–0.6 ❌
+1. [Introduction to React](https://fullstackopen.com/en/part1) ✔️
     - Introduction to React ✔️
-        - Exercise 1.1 ✔️
-        - Exercise 1.2 ✔️
+        - Exercises 1.1–1.2 ✔️
     - JavaScript ✔️
-        - Exercise 1.3 ✔️
-        - Exercise 1.4 ✔️
-        - Exercise 1.5 ✔️
+        - Exercises 1.3–1.5 ✔️
     - Component state, event handlers ✔️
     - A more complex state, debugging React apps ✔️
-        - Exercises 1.6-1.11 \(Unicafe\) ✔️
-        - Exercises 1.12-1.14 \(Anecdotes\)
-2. Communicating with server
-    - Rendering a collection, modules
-    - Forms
-    - Getting data from server
-    - Altering data in server
-    - Adding styles to React app
+        - Exercises 1.6–1.11 \(Unicafe\) ✔️
+        - Exercises 1.12–1.14 \(Anecdotes\) ✔️
+2. [Communicating with server](https://fullstackopen.com/en/part2)
+    - [Rendering a collection, modules](https://fullstackopen.com/en/part2/rendering_a_collection_modules)
+    - [Forms](https://fullstackopen.com/en/part2/forms)
+    - [Getting data from server](https://fullstackopen.com/en/part2/getting_data_from_server)
+    - [Altering data in server](https://fullstackopen.com/en/part2/altering_data_in_server)
+    - [Adding styles to React app](https://fullstackopen.com/en/part2/adding_styles_to_react_app)
 3. Programming a server with NodeJS and Express
     - Node.js and Express
     - Deploying app to internet
