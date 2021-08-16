@@ -24,18 +24,31 @@ const Statistics = ({state:[good, neutral, bad]}) => {
   let mean = ((good * 1) + (bad * -1))/total
   let percentagePositive = good/total * 100
 
+  if (total) {
+    return (
+      <div>
+        <h1>Statistics</h1>
+          <h2>Feedback</h2>
+          <p>
+            Good: {good + ' ' + '😞'.repeat(good)}<br />
+            Neutral: {neutral + ' ' + '😞'.repeat(neutral)}<br />
+            Bad: {bad + ' ' + '😞'.repeat(bad)}
+          </p>
+  
+          <h2>Summary</h2>
+          <p>
+            Total: {total}<br />
+            Average: {mean ? mean : '0'}<br />
+            % Positive: {percentagePositive ? percentagePositive + '%' : '-'}
+          </p>
+      </div>
+    )
+  }
+
   return (
     <div>
       <h1>Statistics</h1>
-      <h2>Feedback</h2>
-      Good: {good + ' ' + '😞'.repeat(good)}<br />
-      Neutral: {neutral + ' ' + '😞'.repeat(neutral)}<br />
-      Bad: {bad + ' ' + '😞'.repeat(bad)}<br />
-
-      <h2>Summary</h2>
-      Total: {total}<br />
-      Average: {mean ? mean : '0'}<br />
-      % Positive: {percentagePositive ? percentagePositive + '%' : '-'}
+      <p>No feedback given</p>
     </div>
   )
 }
