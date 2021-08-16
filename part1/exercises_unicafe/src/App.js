@@ -3,6 +3,10 @@ import React, { useState } from 'react'
 const Button = ({label, handleClick}) =>
   <button onClick = {handleClick}>{label}</button>
 
+const StatisticLine = ({text, value}) => (
+  <>{text}: {value}<br /></>
+)
+
 const FeedbackCollector = ({state:[good, neutral, bad], stateHandlers:[setGood, setNeutral, setBad]}) => {
   const giveGoodFeedback = () => setGood(good + 1)
   const giveNeutralFeedback = () => setNeutral(neutral + 1)
@@ -30,16 +34,16 @@ const Statistics = ({state:[good, neutral, bad]}) => {
         <h1>Statistics</h1>
           <h2>Feedback</h2>
           <p>
-            Good: {good + ' ' + '😞'.repeat(good)}<br />
-            Neutral: {neutral + ' ' + '😞'.repeat(neutral)}<br />
-            Bad: {bad + ' ' + '😞'.repeat(bad)}
+            <StatisticLine text = {'Good'} value = {good + ' ' + '😞'.repeat(good)} />
+            <StatisticLine text = {'Neutral'} value = {neutral + ' ' + '😞'.repeat(neutral)} />
+            <StatisticLine text = {'Bad'} value = {bad + ' ' + '😞'.repeat(bad)} />
           </p>
   
           <h2>Summary</h2>
           <p>
-            Total: {total}<br />
-            Average: {mean ? mean : '0'}<br />
-            % Positive: {percentagePositive ? percentagePositive + '%' : '-'}
+            <StatisticLine text = 'Total' value = {total} />
+            <StatisticLine text = 'Mean' value = {mean ? mean : '0'} />
+            <StatisticLine text = 'Positive feedback (% of total)' value = {percentagePositive ? percentagePositive + '%' : '-'} />
           </p>
       </div>
     )
