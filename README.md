@@ -20,7 +20,7 @@ I am completing [Full Stack Open 2021](https://fullstackopen.com/en/), a deep di
         - Exercise 1.5 ✔️
     - Component state, event handlers ✔️
     - A more complex state, debugging React apps ✔️
-        - Exercises 1.6-1.15 \(Unicafe\)
+        - Exercises 1.6-1.14 \(Unicafe\)
 2. Communicating with server
     - Rendering a collection, modules
     - Forms
