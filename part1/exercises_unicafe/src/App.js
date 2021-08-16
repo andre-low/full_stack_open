@@ -4,7 +4,10 @@ const Button = ({label, handleClick}) =>
   <button onClick = {handleClick}>{label}</button>
 
 const StatisticLine = ({text, value}) => (
-  <>{text}: {value}<br /></>
+  <tr>
+    <td><strong>{text}:</strong>&nbsp;</td>
+    <td>{value}</td>
+  </tr>
 )
 
 const FeedbackCollector = ({state:[good, neutral, bad], stateHandlers:[setGood, setNeutral, setBad]}) => {
@@ -16,8 +19,8 @@ const FeedbackCollector = ({state:[good, neutral, bad], stateHandlers:[setGood, 
     <div>
       <h1>Give feedback</h1>
       <p>How was your experience at Unicafe?</p>
-      <Button label = 'Good 😊' handleClick = {giveGoodFeedback} /> 
-      <Button label = 'Neutral 😐' handleClick = {giveNeutralFeedback} /> 
+      <Button label = 'Good 😊' handleClick = {giveGoodFeedback} />&nbsp;
+      <Button label = 'Neutral 😐' handleClick = {giveNeutralFeedback} />&nbsp;
       <Button label = 'Bad 😞' handleClick = {giveBadFeedback} />
     </div>
   )
@@ -33,17 +36,17 @@ const Statistics = ({state:[good, neutral, bad]}) => {
       <div>
         <h1>Statistics</h1>
           <h2>Feedback</h2>
-          <p>
+          <table>
             <StatisticLine text = {'Good'} value = {good + ' ' + '😞'.repeat(good)} />
             <StatisticLine text = {'Neutral'} value = {neutral + ' ' + '😞'.repeat(neutral)} />
             <StatisticLine text = {'Bad'} value = {bad + ' ' + '😞'.repeat(bad)} />
-          </p>
+          </table>
   
           <h2>Summary</h2>
           <p>
             <StatisticLine text = 'Total' value = {total} />
             <StatisticLine text = 'Mean' value = {mean ? mean : '0'} />
-            <StatisticLine text = 'Positive feedback (% of total)' value = {percentagePositive ? percentagePositive + '%' : '-'} />
+            <StatisticLine text = 'Positive' value = {percentagePositive ? percentagePositive + '%' : '0'} />
           </p>
       </div>
     )
