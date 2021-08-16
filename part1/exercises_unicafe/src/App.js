@@ -37,17 +37,21 @@ const Statistics = ({state:[good, neutral, bad]}) => {
         <h1>Statistics</h1>
           <h2>Feedback</h2>
           <table>
-            <StatisticLine text = {'Good'} value = {good + ' ' + '😞'.repeat(good)} />
-            <StatisticLine text = {'Neutral'} value = {neutral + ' ' + '😞'.repeat(neutral)} />
-            <StatisticLine text = {'Bad'} value = {bad + ' ' + '😞'.repeat(bad)} />
+            <tbody>
+              <StatisticLine text = {'Good'} value = {good + ' ' + '😞'.repeat(good)} />
+              <StatisticLine text = {'Neutral'} value = {neutral + ' ' + '😞'.repeat(neutral)} />
+              <StatisticLine text = {'Bad'} value = {bad + ' ' + '😞'.repeat(bad)} />
+            </tbody>
           </table>
   
           <h2>Summary</h2>
-          <p>
-            <StatisticLine text = 'Total' value = {total} />
-            <StatisticLine text = 'Mean' value = {mean ? mean : '0'} />
-            <StatisticLine text = 'Positive' value = {percentagePositive ? percentagePositive + '%' : '0'} />
-          </p>
+          <table>
+            <tbody>
+              <StatisticLine text = 'Total' value = {total} />
+              <StatisticLine text = 'Mean' value = {mean ? mean : '0'} />
+              <StatisticLine text = 'Positive' value = {percentagePositive ? percentagePositive + '%' : '0'} />
+            </tbody>
+          </table>
       </div>
     )
   }
