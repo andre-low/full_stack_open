@@ -20,9 +20,9 @@ I am completing [Full Stack Open 2021](https://fullstackopen.com/en/), a deep di
         - Exercises 1.6–1.11 \(Unicafe\) ✔️
         - Exercises 1.12–1.14 \(Anecdotes\) ✔️
 2. [Communicating with server](https://fullstackopen.com/en/part2)
-    - [Rendering a collection, modules](https://fullstackopen.com/en/part2/rendering_a_collection_modules) ◀
-        - Completed [Refactoring Modules](https://fullstackopen.com/en/part2/rendering_a_collection_modules#refactoring-modules) ◀
-    - [Forms](https://fullstackopen.com/en/part2/forms)
+    - [Rendering a collection, modules](https://fullstackopen.com/en/part2/rendering_a_collection_modules) ✔️
+        - Exercises 2.1-2.5 ✔️
+    - [Forms](https://fullstackopen.com/en/part2/forms) ◀
     - [Getting data from server](https://fullstackopen.com/en/part2/getting_data_from_server)
     - [Altering data in server](https://fullstackopen.com/en/part2/altering_data_in_server)
     - [Adding styles to React app](https://fullstackopen.com/en/part2/adding_styles_to_react_app)
