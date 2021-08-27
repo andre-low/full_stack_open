@@ -12,13 +12,11 @@ const Content = ({course}) => (
   </>
 )
 
-const Total = ({course}) => {
-  let exercises = 0
-  for (const part of course.parts) {
-    exercises += part.exercises
-  }
-  return <p>Number of exercises {exercises}</p>
-}
+const Total = ({course}) => (
+  <p>Number of exercises {
+    course.parts.reduce((accumulator, currentValue) => accumulator + currentValue.exercises, 0)
+  }</p>
+)
 
 const Course = ({course}) => (
   <div>
