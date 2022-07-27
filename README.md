@@ -1,6 +1,6 @@
-# Full Stack Open 2021
+# Full Stack Open 2022
 
-I am completing [Full Stack Open 2021](https://fullstackopen.com/en/), a deep dive into modern web development.
+I am completing [Full Stack Open](https://fullstackopen.com/en/), a deep dive into modern web development.
 
 > Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.
 
@@ -11,7 +11,7 @@ I am completing [Full Stack Open 2021](https://fullstackopen.com/en/), a deep di
     - Fundamentals of web apps ✔️
         - Exercises 0.1–0.6 ❌
 1. [Introduction to React](https://fullstackopen.com/en/part1) ✔️
-    - Introduction to React ✔️
+    - [Introduction to React ✔️](https://fullstackopen.com/en/part1/introduction_to_react)
         - Exercises 1.1–1.2 ✔️
     - JavaScript ✔️
         - Exercises 1.3–1.5 ✔️
