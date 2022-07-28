@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Header = (props) => <h1>{props.course.name}</h1>
 
 const Part = (props) => (<p>{props.part.name} {props.part.exercises}</p>)
